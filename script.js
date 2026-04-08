@@ -67,7 +67,7 @@ function displayData(rates) {
       name.innerText = cur.toUpperCase();
 
       let rate = document.createElement("p");
-      rate.innerText = val < 1 ? val.toFixed(6) : val.toFixed(2);
+      rate.innerText = val < 1 ? val.toFixed(7) : val.toFixed(2);
 
       let favBtn = document.createElement("button");
       favBtn.innerText = favorites[cur] ? "⭐" : "☆";
