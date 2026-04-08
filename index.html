@@ -6,35 +6,47 @@
 </head>
 <body>
 
-  <div class="card">
+  <div class="app">
+
     <h1>💱 Currency Converter</h1>
 
-    <input type="number" id="amount" placeholder="Enter amount">
+    <!-- Dark Mode -->
+    <button id="theme-btn">🌙 Toggle Theme</button>
 
-    <div class="row">
-      <select id="from">
-        <option value="inr">INR</option>
-        <option value="usd">USD</option>
-        <option value="eur">EUR</option>
-        <option value="gbp">GBP</option>
-      </select>
+    <!-- Converter -->
+    <div class="card">
+      <input type="number" id="amount" placeholder="Enter amount">
 
-      <span>→</span>
+      <div class="row">
+        <select id="from"></select>
+        <span>→</span>
+        <select id="to"></select>
+      </div>
 
-      <select id="to">
-        <option value="usd">USD</option>
-        <option value="inr">INR</option>
-        <option value="eur">EUR</option>
-        <option value="gbp">GBP</option>
+      <button onclick="convert()">Convert</button>
+
+      <p id="loading"></p>
+      <h2 id="result"></h2>
+    </div>
+
+    <!-- Base Currency -->
+    <p id="base-label">Base Currency: INR</p>
+
+    <!-- Search + Sort -->
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search currency...">
+      <select id="sort">
+        <option value="">Sort</option>
+        <option value="asc">Rate ↑</option>
+        <option value="desc">Rate ↓</option>
       </select>
     </div>
 
-    <button onclick="convert()">Convert</button>
+    <!-- Currency Cards -->
+    <div id="container"></div>
 
-    <p id="loading"></p>
-    <h2 id="result"></h2>
   </div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

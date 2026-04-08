@@ -2,42 +2,86 @@
 
 📌 Project Description
 
-This project is a web application that provides real-time currency exchange rates using a public API. Users can convert one currency to another, view live exchange rates, and interact with a simple and responsive interface.
+This is a web-based application that provides real-time currency exchange rates using a public API. Users can convert currencies, explore exchange rates, and interact with a dynamic and responsive interface.
 
 
 
 🔗 API Used
 
-- Frankfurter API  
-  https://api.frankfurter.app/
+* Currency API (Fawaz Ahmed)
+  https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api
 
- ✨ Features
 
-* 🔄 Convert currency (e.g., USD to INR)
-* 🔍 Select different currencies
-* 📊 Display real-time exchange rates
-* 🔁 Swap currencies functionality
-* 📱 Responsive design for all devices
-* ⏳ Loading indicator while fetching data
+
+✨ Features
+
+🔄 Currency Converter
+
+* Convert any currency to another (e.g., INR → USD)
+* Supports 200+ currencies
+
+📊 Real-Time Exchange Rates
+
+* Displays live exchange rates based on selected base currency
+* Dynamic updates when base currency changes
+
+🔍 Search Functionality
+
+* Search currencies by code (e.g., USD, EUR)
+* Implemented using `filter()`
+
+📈 Sorting
+
+* Sort currencies by exchange rate (ascending / descending)
+* Implemented using `sort()`
+
+⭐ Favorite Currencies
+
+* Mark currencies as favorites using star button
+* Stored in localStorage for persistence
+
+🌙 Dark Mode
+
+* Toggle between light and dark themes
+
+📱 Responsive UI
+
+* Works on mobile, tablet, and desktop
+* Uses simple media queries
+
+✨ UI Enhancements
+
+* Card-based layout
+* Hover animations and transitions
+* Gradient background
+
 
 
 🛠️ Technologies Used
 
 * HTML
-* CSS
+* CSS (Animations + Responsive Design)
 * JavaScript (Fetch API)
-* Array Higher Order Functions (map, filter, sort)
+* Array Higher Order Functions:
+
+  * `map()`
+  * `filter()`
+  * `sort()`
 
 
- 📂 Project Structure
 
-currency-exchange-app/
+📂 Project Structure
+
+```
+currency-converter-webapp/
 │── index.html
 │── style.css
 │── script.js
+```
 
 
- 🚀 How to Run
+
+🚀 How to Run
 
 1. Clone the repository
 2. Open the project folder
@@ -45,15 +89,25 @@ currency-exchange-app/
 
 
 
- 🎯 Future Improvements
+🧠 Key Concepts Implemented
 
-* ⭐ Add favorite currencies (using localStorage)
-* 🌙 Dark mode toggle
-* 📄 Pagination for large currency lists
-* 📈 Historical exchange rate charts
+* Fetch API for real-time data
+* DOM manipulation
+* Event handling
+* Local Storage (favorites)
+* Higher Order Functions for search and sorting
 
----
 
-## 👨‍💻 Author
 
-Snehaashish
+🎯 Future Improvements
+
+* 📄 Pagination for large datasets
+* ⚡ Debouncing for search input
+* 📈 Historical exchange rate graphs
+* 🔄 Auto-convert on input change
+
+
+
+👨‍💻 Author
+
+Snehaashish Sahoo
