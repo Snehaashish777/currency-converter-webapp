@@ -105,15 +105,6 @@ currency-converter-webapp/
 
 
 
-🎯 Future Improvements
-
-* 📄 Pagination for large datasets
-* ⚡ Debouncing for search input
-* 📈 Historical exchange rate graphs
-* 🔄 Auto-convert on input change
-
-
-
 👨‍💻 Author
 
 Snehaashish Sahoo
