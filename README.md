@@ -6,6 +6,12 @@ This is a web-based application that provides real-time currency exchange rates 
 
 
 
+🌐 Live Demo
+
+https://incomparable-palmier-90036d.netlify.app/
+
+
+
 🔗 API Used
 
 * Currency API (Fawaz Ahmed)
@@ -47,7 +53,7 @@ This is a web-based application that provides real-time currency exchange rates 
 📱 Responsive UI
 
 * Works on mobile, tablet, and desktop
-* Uses simple media queries
+* Uses media queries for layout adjustments
 
 ✨ UI Enhancements
 
@@ -64,9 +70,9 @@ This is a web-based application that provides real-time currency exchange rates 
 * JavaScript (Fetch API)
 * Array Higher Order Functions:
 
-  * `map()`
-  * `filter()`
-  * `sort()`
+  `map()`
+  `filter()`
+  `sort()`
 
 
 
